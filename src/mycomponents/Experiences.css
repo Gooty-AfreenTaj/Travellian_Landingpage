@@ -1,0 +1,155 @@
+.expns {
+    padding: 5px 0px 5px 20px;
+    color: black;
+    margin-top: 45px;
+    height: fit-content;
+}
+
+.expnsTitle {
+    height: 120px;
+    padding-bottom: 20px;
+}
+
+.expns-h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.expns-underline {
+    width: 200px;
+    height: 2px;
+    background-color: #FF7757;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.nav-btm-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 10px 10px 0;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev-btn {
+    background: #1b273a;
+}
+
+.next-btn {
+    background: #FF7757;
+}
+
+.scrolling-expns {
+    height: 37rem;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+    height: 0 !important;
+    display: none !important;
+}
+
+/* HOVER UP */
+@media(min-width:768px) {
+    .card {
+        transition: transform 0.35s ease;
+    }
+
+    .planning:hover .card {
+        transform: translateY(-45px);
+    }
+}
+
+/* STARS */
+.stars {
+    color: #ffda56;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* --- REVIEW CARD SECTION --- */
+
+.review-wrapper {
+    position: relative;
+    width: 30rem;
+    margin: 0 auto 0 auto;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: "hidden"
+}
+
+.review-avatar {
+    position: absolute;
+    top: -40px;
+    left: 10%;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+    z-index: 2;
+}
+
+.review-card {
+    background: #F5F6F7;
+    border-radius: 10px;
+    padding: 70px 30px 35px 30px;
+    text-align: left;
+}
+
+.review-name {
+    font-size: 22px;
+    margin-bottom: 0;
+    font-family: "Playfair Display", serif;
+}
+
+.review-job {
+    color: #6b6b6b;
+    margin-top: 5px;
+}
+
+@media(max-width:768px){
+    .nav-btm-btns {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 10px 10px 0;
+}
+
+}
+
+@media(max-width:550px){
+  .review-wrapper {
+    position: relative;
+    width: 20rem;
+    margin: 0 auto 0 auto;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: "hidden"
+}
+}
+
+@media(min-width:1900px){
+
+    .expns{
+        padding-left:6rem;
+    }
+}

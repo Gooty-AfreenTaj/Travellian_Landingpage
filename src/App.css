@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-size: 0.9rem;
+}
+
+body {
+  color: white;
+}
+
+
+.navbar .nav-link {
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+
+.active-link {
+  text-decoration: underline;
+  text-decoration-color: #FF7757;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.btn-signup {
+  background-color: #FF7757;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.btn-signup:hover {
+  background-color: #e66a4f;
+  color: white;
+}
+
+.book-now-btn {
+  background-color: #FF7757;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  margin: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media(min-width:1400px){
+  .pad{
+    padding-left: 50px;
+    padding-right:50px
+  }
+}
+
+select{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input::placeholder {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.booking{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+
+
+.book-now-con{
+height:100%;
+width:12%;
+display:flex;
+justify-content: center;
+align-items:center;
+padding-left:-5rem;
+  border-radius: 0 1rem 1rem 0 ;
+  background-color: #FF7757;
+  color:white !important;
+
+}
+
+.book-now-con:hover{
+  background-color: #e66a4f;
+  color: white;
+}
+
+.underline-dark {
+  border-bottom: 1px solid #6e6d6d !important;
+  color:#6e6d6d
+}
+
+@media (max-width: 380px){
+  .book-now{
+       border-radius: 0 0 1rem 1rem;
+} 
+.book-now-con{
+  border-radius: 0 0 1rem 1rem ;
+}
+.booking{
+  border-radius: 1rem ;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .underline-dark {
+    font-size: 0.85rem;
+  }
+
+  .booking input, .booking select {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-container {
+    height: auto !important;
+  }
+}

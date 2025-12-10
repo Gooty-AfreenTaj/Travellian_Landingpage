@@ -1,0 +1,265 @@
+.Planner {
+  display: grid;
+  grid-template-columns: 25% 71%;
+  margin: 4rem 0rem 1rem 2rem;
+  gap: 3.35rem;
+}
+
+
+.plannerTitle {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+.planner-h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #172432;
+
+}
+
+
+.planner-underline {
+  width: 160px;
+  height: 2px;
+  background-color: #FF7757;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+  height: 0 !important;
+  display: none !important;
+}
+
+.scrolling-trip {
+
+  height: 38rem;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.btn-trip {
+
+  background-color: #FF7757;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+
+}
+
+.btn-trip:hover {
+  background-color: #fe6643;
+
+
+}
+
+.plans {
+  padding: 10px 10px 0px 10px;
+  color: #172432;
+  font-size: 1.4rem;
+}
+
+.plans h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600
+}
+
+.tripCard {
+
+  width: 265px;
+  height: 350px
+}
+
+
+.stars {
+  color: #ffda56;
+  letter-spacing: 2px;
+
+}
+
+
+
+@media(min-width:768px) {
+
+  /* Hide all plans by default */
+  .plans {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  /* Show plans when hovering that specific item */
+  .planning:hover .plans {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-45px);
+    pointer-events: auto;
+  }
+
+  .card {
+    transition: transform 0.35s ease;
+  }
+
+
+  /* raise card on hover */
+  .planning:hover .card {
+    transform: translateY(-45px);
+  }
+
+
+}
+
+
+@media(max-width:769px) {
+  .Planner {
+    display: grid;
+    grid-template-columns: none;
+    margin: 6rem 0rem 1rem 2rem;
+    gap: 3.35rem;
+  }
+
+
+}
+
+
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* BLUE BOX — above left */
+.button-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #172432;
+  /* dark blue */
+
+  top: -12px;
+  /* move UP */
+  left: -12px;
+  /* move LEFT */
+
+  z-index: 1;
+}
+
+/* GREY BOX — below right */
+.button-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #8b949e;
+  /* grey */
+
+  bottom: -12px;
+  /* move DOWN */
+  right: -12px;
+  /* move RIGHT */
+
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+
+  /* disable horizontal scroll completely */
+  .scrolling-trip {
+    display: block;
+    /* stack children */
+    height: auto;
+    /* auto height */
+    width: 100%;
+    overflow-x: hidden !important;
+    /* no horizontal scroll */
+    overflow-y: visible;
+    padding: 0;
+  }
+
+  /* gallery wrapper inside */
+  .scrolling-trip>div {
+    display: block !important;
+    /* remove flex */
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* each card container */
+  .planning {
+    width: 95%;
+    /* full screen width */
+  }
+
+  /* card */
+  .tripCard {
+    width: 100%;
+    height: auto;
+    /* let image define height */
+    border-radius: 0;
+    /* optional  */
+  }
+
+  /* card image */
+  .tripCard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* content section */
+  .plans {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    background: white;
+    color: #172432;
+    border-radius: 0 0 12px 12px;
+
+    /* override desktop hover hidden */
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+
+  .plans h3 {
+    font-size: 1.5rem;
+    margin: 0 0 .5rem 0;
+  }
+
+  .stars {
+    font-size: 1.2rem;
+  }
+
+  /* disable hover animation on mobile */
+  .planning:hover .card,
+  .planning:hover .plans {
+    transform: none !important;
+  }
+}
+
+@media(min-width:1900px) {
+  .Planner {
+    grid-template-columns: 25% 72.3%;
+    padding-left: 6rem;
+  }
+}

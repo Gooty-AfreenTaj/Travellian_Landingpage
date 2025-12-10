@@ -1,0 +1,153 @@
+.destination {
+  padding: 50px 0px 20px 20px;
+  color: black;
+  margin-top: 45px;
+  height: fit-content;
+}
+
+.desTitle {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  height: 120px;
+  padding-bottom: 7rem;
+}
+
+.des-h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.desTitle-2 {
+  background-color: #FF7757;
+}
+
+.des-underline {
+  width: 200px;
+  height: 2px;
+  background-color: #FF7757;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.elementdim {
+  width: 310px;
+  height: 400px;
+}
+
+.btn-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #172432;
+  color: white;
+  font-size: 2rem;
+}
+
+.btn-left:hover {
+  background-color: #172432;
+  color: white;
+  font-size: 2rem;
+}
+
+.btn-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF7757;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-size: 2rem;
+}
+
+.btn-right:hover {
+  background-color: #FF7757;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-size: 2rem;
+}
+
+.pop-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.prev-btn {
+  background: #1b273a;
+}
+
+.next-btn {
+  background: #FF7757;
+}
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+  height: 0 !important;
+  display: none !important;
+}
+
+.scrolling {
+
+  height: 500px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media(max-width:767px) {
+
+  .pop-buttons {
+    visibility: hidden !important;
+  }
+  
+.elementdim {
+  width: 93vw;
+  height: 380px;
+}
+
+.scrolling{
+   height: 480px;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 3rem; /* bigger gap */
+}
+}
+
+@media(min-width:768px) {
+
+  .bottom-nav {
+    visibility: hidden !important;
+  }
+
+}
+
+.bottom-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px 0 20px 0;
+}
+
+@media(min-width:1900px){
+
+  .destination{
+
+    padding-left:6rem;
+  }
+}

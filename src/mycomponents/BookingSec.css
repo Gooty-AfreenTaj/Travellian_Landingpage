@@ -1,0 +1,200 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 80% 5%;
+  margin-top: 5rem;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 84% 16%;
+  background-color: white;
+  border-radius: 0px 10px 10px 0px;
+  min-height: 140px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 210px);
+  gap: 1px;
+  justify-content: center;
+  padding: 2.3rem 0 0rem 0.3rem;
+}
+
+/* .grid-container3 {
+  display: grid;
+  grid-template-columns: 80% 10%;
+  background-color: #FF7757;
+  border-radius: 0px 10px 10px 0px;
+  padding: 15px;
+} */
+
+
+.grid-container3 {
+  display: flex;
+  background-color: #FF7757;
+  border-radius: 0px 10px 10px 0px;
+  padding-right: 0.5rem;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.field-label {
+  text-transform: uppercase;
+  color: #6e6d6d;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+
+.field-input {
+  width: 88%;
+  max-width: 240px;
+  border: none;
+  border-bottom: 2px solid #6e6d6d;
+  /* padding: 0.2rem 0; */
+  font-family: "Times New Roman", serif;
+  font-size: 1.2rem;
+  color: #414040;
+  background: transparent;
+  outline: none;
+
+}
+
+
+.field-input::placeholder {
+  color: #414040;
+}
+
+.field-input-date {
+  width: 88%;
+  max-width: 240px;
+
+  border: none;
+  border-bottom: 2px solid #6e6d6d;
+
+  font-family: "Times New Roman", serif;
+  font-size: 1.1rem;
+
+  color: #414040;
+  background: transparent;
+
+  padding-bottom: 2px;
+  outline: none;
+}
+
+/* style placeholder-like text before selection */
+.field-input-date::-webkit-datetime-edit {
+  color: #6e6d6d;
+  /* muted text */
+  font-family: "Times New Roman", serif;
+}
+
+/* calendar icon color fix */
+.field-input-date::-webkit-calendar-picker-indicator {
+  filter: invert(40%);
+}
+
+.right-arrow {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF7757;
+  color: white;
+  border-radius: 0 1rem 1rem 0;
+  font-family: "Times New Roman";
+  border: none;
+  padding: 0;
+  width: fit-content;
+  font-size: 1.8rem;
+}
+
+
+
+@media(max-width:769px)and (min-width:642px) {
+  .grid-container3 {
+    padding: 0;
+    font-size: 0.6rem;
+  }
+
+  .grid-container2 {
+    padding: 0 0 1rem 0;
+  }
+
+  .field-input {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  .field-input-date {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 82% 18%;
+  }
+}
+
+@media(max-width:641px) {
+
+
+  .grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 6rem;
+    width: 61%;
+    border-radius: 1rem;
+    justify-content: center;
+  }
+
+  .grid-container3 {
+    border-radius: 0 0 1rem 1rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-container2 {
+    padding: 2.3rem 0 0rem 1.3rem;
+    gap: 1rem;
+  }
+
+
+  .book-now {
+
+    align-items: end;
+    width: fit-content;
+
+  }
+
+  .right-arrow {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+  }
+}

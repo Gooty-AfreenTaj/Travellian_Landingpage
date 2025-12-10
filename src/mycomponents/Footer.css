@@ -1,0 +1,149 @@
+.Footer {
+    margin-top: 10rem;
+}
+
+.Footer1 {
+    box-shadow: 0 0px 2px #767E86;
+    height: 12rem;
+    width: 65rem;
+    display: grid;
+    grid-template-columns: 40% 52%;
+    gap: 3rem;
+    color: rgb(159, 159, 159);
+    background-color: white;
+    border-radius: 2rem;
+    left: 13%;
+    bottom: 75%
+}
+
+.Footer1-1 {
+    display: grid;
+    grid-template-columns: 55% 33%;
+    gap: 2rem;
+}
+
+.email-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    background-color: #FFE8D4;
+    color: #FF7757
+}
+
+.email-input:focus {
+    border-color: #FF7757;
+    box-shadow: 0 0 6px rgba(255, 119, 87, 0.4);
+}
+
+.email-input::placeholder {
+    color: #FF7757;
+    opacity: 1;
+    /* make sure it is fully visible */
+}
+
+.footer-btn {
+    padding-bottom: 3rem;
+}
+
+
+.Footer2 {
+    display: grid;
+    grid-template-columns: 28% 13% 18% 20% 18%;
+    background-color: #172432;
+    padding: 12rem 2rem 5rem 2rem;
+    gap: 1rem
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 1.2rem
+}
+
+.btn-sub {
+    width: fit-content;
+    padding: 1.05rem 2.2rem 1.05rem 2.2rem;
+    background-color: #FF7757;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.05rem
+}
+
+
+
+.btn-sub:hover {
+    width: fit-content;
+    background-color: #FF7757;
+}
+
+
+@media(max-width:768px) {
+
+
+    
+
+    .Footer2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+        padding-top: 14rem;
+    }
+
+}
+
+@media(min-width:1900px) {
+    .Footer2 {
+        padding-left: 6rem;
+    }
+
+}
+
+@media(min-width:1600px) {
+    .Footer1 {
+        left: 26%;
+    }
+}
+
+@media(min-width:1100px)and (max-width:1180px) {
+    .Footer1 {
+        left: 8%;
+    }
+}
+
+@media(min-width:1000px)and (max-width:1100px) {
+    .Footer1 {
+        left: 3%;
+    }
+}
+
+@media(max-width:999px) {
+    .Footer1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+        height: auto;
+        padding: 2rem 2rem 0rem 2rem;
+        width: 90%;
+        left: 50%;
+        bottom: 100%;
+        transform: translateX(-50%);
+    }
+
+    .Footer1-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .Footer {
+        margin-top: 30rem;
+    }
+}
