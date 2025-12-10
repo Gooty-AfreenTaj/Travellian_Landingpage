@@ -163,3 +163,9 @@ padding-left:-5rem;
     height: auto !important;
   }
 }
+
+.landing-title{
+   padding-top: 5rem;
+    margin-left: 1rem;
+    width:95%
+}

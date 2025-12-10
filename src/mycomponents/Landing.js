@@ -1,4 +1,5 @@
 import React from "react";
+import '../App.css'
 import heroSection from "../heroSection.png";
 import Navbar from "./Navbar";
 import BookingSec from "./BookingSec";
@@ -24,8 +25,7 @@ const Landing = () => {
 
         {/* TEXT SECTION */}
         <div
-          className="container my-1"
-          style={{ paddingTop: "5rem", marginLeft: "1rem" }}
+          className="container my-1 landing-title"
         >
           <h1 className="display-3 pad" style={{ fontFamily: "Times New Roman" }}>
             Start your unforgettable
