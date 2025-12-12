@@ -166,7 +166,7 @@
      .cardDim {
     width: 90vw !important;
     padding: 0 0 2rem 0;
-    height: 26rem;       /* allow content to define height */
+    height: 29rem;       /* allow content to define height */
   }
 
   .cardDim img {
