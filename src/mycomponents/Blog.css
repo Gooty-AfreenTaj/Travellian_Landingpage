@@ -41,9 +41,9 @@ height:42rem;
 
 .blog-content{
     display:grid;
-    grid-template-columns:48% 50%;
-    margin:3rem 1rem 3rem 1rem;
-    gap:2rem;
+    grid-template-columns:48% 49%;
+    margin:3rem 0rem 3rem 1rem;
+    gap:1.3rem;
     width:100%;
 }
 
@@ -70,7 +70,7 @@ height:42rem;
     grid-template-columns:1fr;
     grid-template-rows:auto auto;
     margin:3rem 1rem 3rem 1rem;
-    gap:2rem;
+    gap:1.3rem;
     width:100%;
 }
 

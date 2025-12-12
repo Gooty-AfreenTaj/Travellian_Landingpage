@@ -1,10 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import '../App.css'
 import heroSection from "../heroSection.png";
 import Navbar from "./Navbar";
 import BookingSec from "./BookingSec";
+import NavbarMobile from "./NavbarMobile";
 
 const Landing = () => {
+  const [isOpen,setIsOpen]=useState(false)
   return (
    <div className="landing-container position-relative" style={{ height: "100%" }}>
 
@@ -12,16 +14,16 @@ const Landing = () => {
       <img
         src={heroSection}
         alt="Hero Section"
-        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-        style={{ zIndex: 0 }}
-      />
+        className={` ${isOpen ? "hero-bg":"position-absolute top-0 start-0 w-100 h-100 object-fit-cover"}`}
+        style={{zIndex:"0"}}/>
 
       {/* OVERLAY CONTENT */}
-      <div
+     {isOpen ?(<>
+      <NavbarMobile  isOpen={isOpen} setIsOpen={setIsOpen}/></>): <div
         className="overlay w-100 d-flex flex-column text-white"
         style={{ position: "relative", zIndex: 1, minHeight: "100vh" }}
       >
-        <Navbar />
+        <Navbar  isOpen={isOpen} setIsOpen={setIsOpen}/>
 
         {/* TEXT SECTION */}
         <div
@@ -37,7 +39,7 @@ const Landing = () => {
         </div>
 
         <BookingSec />
-      </div>
+      </div>}
     </div>
   );
 };

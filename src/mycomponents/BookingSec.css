@@ -166,7 +166,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin: 5.5rem;
+    margin: 5.25rem;
     width: 61%;
     border-radius: 1rem;
     justify-content: center;

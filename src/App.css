@@ -46,11 +46,15 @@
   font-size: 0.9rem;
 }
 
-body {
-  color: white;
+html, body {
+  overflow-x: hidden !important;
+  color:white;
 }
 
-
+.hero-image{
+  filter:blur(8px);
+  z-index:0
+}
 .navbar .nav-link {
   font-size: 0.9rem;
   margin-right: 1rem;
@@ -163,9 +167,103 @@ padding-left:-5rem;
     height: auto !important;
   }
 }
+.logo-toggle-gap{
+  gap:1rem ;
+  display:flex;
+  justify-content:space-between;
+}
 
 .landing-title{
    padding-top: 5rem;
     margin-left: 1rem;
     width:95%
 }
+.Navbar{
+  background-color: transparent;
+}
+
+.nav-list{
+  display:flex;
+}
+
+.nav-list ul.navbar-nav {
+  align-items: flex-start !important;  /* forces left alignment */
+  text-align: left !important;
+  padding-left: 1.5rem;                /* spacing */
+  gap: 1rem;                           /* space between items */
+}
+
+/* .Box{
+  backdrop-filter: blur(8px); 
+} */
+
+.open{
+background-color: white;
+color:black;
+height:100vw;
+width:75%;
+display:flex;
+flex-direction:column;
+padding:2rem
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -75vw; /* hidden */
+  width: 100vw;
+  height: 100%;
+  background: white;
+  transition: right 0.3s ease-in-out;
+  z-index: 999; /* ABOVE EVERYTHING */
+  display: flex;
+  flex-direction: column;
+  gap:5rem;
+  padding-top: 70px; 
+}
+
+.mobile-menu.open {
+  right: 0; /* slide into view */
+
+}
+
+.hero-bg {
+  position:relative;     /* stays fixed on screen */
+  width: 100%;
+  height: 102vh;
+  object-fit: cover;   /* keeps image full-screen */
+  z-index: 0;    
+  filter:blur(8px);
+        /* lowest layer */
+}
+
+/* PUSH BUTTONS DOWN */
+.menu-buttons {
+  margin-top: auto;         /* pushes buttons to bottom */
+  display: flex;
+  justify-content:space-between
+}
+
+/* Button styling */
+.login-btn {
+  background: transparent;
+  color: black;
+  border: 2px solid #FF7757;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.signup-btn {
+  background: #FF7757;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.closing{
+  font-size:2rem;
+}
+
+
